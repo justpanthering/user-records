@@ -2,10 +2,10 @@
 
 1. This project was made using React, React-Router-DOM, Axios and Bootstrap
 2. To run the project on your local machine, in your terminal,
-   1. Run: $ git clone https://github.com/justpanthering/user-records.git
+   1. Run: `$ git clone https://github.com/justpanthering/user-records.git`
    2. Navigate to the cloned directory
-   3. Run $ npm install
-   4. Run $ npm start
+   3. Run `$ npm install`
+   4. Run `$ npm start`
 3. You can aslo preview the deployed web app on git-page [here](https://justpanthering.github.io/user-records/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
