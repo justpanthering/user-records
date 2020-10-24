@@ -1,4 +1,4 @@
-#IMPORTANT NOTE!
+# IMPORTANT NOTE!
 
 1. This project was made using React, React-Router-DOM, Axios and Bootstrap
 2. To run the project on your local machine, in your terminal,
