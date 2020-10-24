@@ -6,7 +6,7 @@
    2. Navigate to the cloned directory
    3. Run `$ npm install`
    4. Run `$ npm start`
-3. You can aslo preview the deployed web app on git-page [here](https://justpanthering.github.io/user-records/)
+3. You can aslo preview the deployed web app on github-pagees [here](https://justpanthering.github.io/user-records/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
