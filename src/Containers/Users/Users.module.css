@@ -1,0 +1,17 @@
+.Users{
+  margin-top: 4.5rem;
+}
+
+.Table{
+  margin-top: 2rem;
+}
+
+.Pagination{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.SearchForm{
+  margin-top: 1rem;
+}

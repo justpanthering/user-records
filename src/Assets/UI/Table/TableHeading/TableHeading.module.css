@@ -1,0 +1,11 @@
+.TableHeading{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  height: 100%;
+}
+
+.Icon{
+  margin-left: 0.5rem;
+}

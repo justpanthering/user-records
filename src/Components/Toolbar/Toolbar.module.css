@@ -1,0 +1,10 @@
+.Toolbar{
+  background: var(--primary-color-dark);
+  color: var(--primary-color-dark-text);
+  padding: 0.5rem 1rem;
+}
+
+.Logo{
+  font-size: 2rem;
+  cursor: pointer;
+}
