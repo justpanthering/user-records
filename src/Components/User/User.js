@@ -57,7 +57,7 @@ const User = props => {
       <div className={Styles.Header}>
         <Link
           className={Styles.Back}
-          to="/user">
+          to="/user-records/user">
           <i className="fa fa-arrow-left" aria-hidden="true"></i>
         </Link>
         <h3>User Details</h3>

@@ -44,7 +44,7 @@ const Users = () => {
       return (
         <tr key={user.id}>
           <td>
-            <Link to={`/user/${user.id}`}>
+            <Link to={`/user-records/user/${user.id}`}>
               {user.first_name}
             </Link>
           </td>

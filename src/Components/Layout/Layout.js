@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 // Components
 import Toolbar from '../Toolbar/Toolbar';
@@ -6,10 +6,10 @@ import Body from '../Body/Body';
 
 const layout = () => {
   return (
-    <div>
+    <Fragment>
       <Toolbar />
       <Body />
-    </div>
+    </Fragment>
   )
 }
 

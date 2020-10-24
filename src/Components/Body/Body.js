@@ -17,20 +17,22 @@ const body = () => {
 
           <Route
             exact
-            path="/"
+            path="/user-records"
             render={() => {
               return (
                 <Redirect
-                  to="/user"
-                />)
+                  to="/user-records/user"
+                />
+              )
             }} />
 
           <Route
-            path="/user/:id"
+            path="/user-records/user/:id"
             component={User} />
 
           <Route
-            path="/user" component={Users} />
+            path="/user-records/user"
+            component={Users} />
         </Switch>
       </BrowserRouter>
     </DataProvider>
