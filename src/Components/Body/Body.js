@@ -7,34 +7,34 @@ import User from '../../Components/User/User';
 // CONTEXT
 import { DataProvider } from '../../Context/UsersContext/UsersContext';
 
-import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Redirect, Route, Switch, HashRouter } from 'react-router-dom';
 
 const body = () => {
   return (
     <DataProvider>
-      <BrowserRouter>
+      <HashRouter>
         <Switch>
 
           <Route
             exact
-            path="/user-records"
+            path="/"
             render={() => {
               return (
                 <Redirect
-                  to="/user-records/user"
+                  to="/user"
                 />
               )
             }} />
 
           <Route
-            path="/user-records/user/:id"
+            path="/user/:id"
             component={User} />
 
           <Route
-            path="/user-records/user"
+            path="/user"
             component={Users} />
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     </DataProvider>
   )
 }

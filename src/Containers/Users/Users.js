@@ -21,7 +21,7 @@ const Users = () => {
 
   useEffect(() => {
     setData(
-      receivedData.subData.length > 0
+      receivedData.subData.length > 0 || receivedData.query !== ""
         ? receivedData.subData
         : receivedData.data
       // receivedData.data
@@ -44,7 +44,7 @@ const Users = () => {
       return (
         <tr key={user.id}>
           <td>
-            <Link to={`/user-records/user/${user.id}`}>
+            <Link to={`/user/${user.id}`}>
               {user.first_name}
             </Link>
           </td>
@@ -61,7 +61,7 @@ const Users = () => {
       )
     })
   }
-  else {
+  else if (error !== null) {
     errorJSX =
       <Alert variant="danger" dismissible>
         <Alert.Heading>Connection Error!!!</Alert.Heading>
@@ -69,6 +69,12 @@ const Users = () => {
           {error}
         </p>
       </Alert>
+  }
+  else if (receivedData.isLoading) {
+    errorJSX =
+      <div className="spinner-border" role="status">
+        <span className="sr-only">Loading...</span>
+      </div>
   }
 
   return (

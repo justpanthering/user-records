@@ -33,7 +33,8 @@ export const DataProvider = ({ children }) => {
     subData: [],
     sortType: null,
     error: null,
-    query: ""
+    query: "",
+    isLoading: true
   });
 
 
@@ -87,7 +88,8 @@ export const DataProvider = ({ children }) => {
     if (query === "") {
       setData({
         ...data,
-        subData: []
+        subData: [],
+        query: query
       })
     }
     else {
@@ -112,14 +114,16 @@ export const DataProvider = ({ children }) => {
         setData({
           ...data,
           data: response.data,
-          error: null
+          error: null,
+          isLoading: false
         });
       })
       .catch(error => {
         console.log(error);
         setData({
           ...data,
-          error: error.message
+          error: error.message,
+          isLoading: false
         })
       })
   }, [])
